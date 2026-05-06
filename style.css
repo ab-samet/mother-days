@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fce4ec;
+  font-family: "Playwrite DE SAS", cursive;
+}
+
+.envelope {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background: #ff8a80;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+/* Kapak */
+.flap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ff5252;
+  transform-origin: top;
+  transition: 0.5s;
+}
+
+/* Kağıt */
+.letter {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: white;
+  top: 100%;
+  left: 5%;
+  transition: 0.5s;
+  padding: 10px;
+  text-align: center;
+}
